@@ -2,6 +2,9 @@
 
 The following notebooks are available for reference only. Dataset used and corresponding Python scripts can be found here: https://jm-sandbox-public.s3.us-east-2.amazonaws.com/DS8013_project_codes_marcogliese_zmytrakov.zip
 
+## Report
+https://github.com/JamesMarcogliese/deep-learning-bitcoin-forecasting/blob/main/DS8013_Final.pdf 
+
 ## Dataset Preparation
 `Dataset_Prep` is a notebook for loading Bitcoin tweets from csv files, preprocessing, cleaning Tweet text information, formating, and engineering the features for further feeding into RNN models and extracting the labels. The final output file will be used for Sentiment Analysis. It incorporates CountVectorizer for converting the Tweets primary text to a matrix of token counts, and TfidfTransformer for representing the count matrix to a normalized TF-IDF representation. **Please note that the preprocessing time takes over 24 hours due to large Tweet dataset.** The library SMOTE was imported from imblearn.over_sampling to prevent imbalanced dataset, to prevent classification bias towards a better represented class. NLPK library is used for cleaning the Bitcoin tweets copy by removing stopwords, punctuation, numerical symbols etc. The csv files need to be located in Data folder. 
 #### Installation:
